@@ -1,3 +1,3 @@
 const Utility = require('./Utility');
-const wage = Utility.empWage();
-console.log(wage);
+const totalSalary = Utility.EmpWage();;
+console.log(`Wage for a Month = ${totalSalary}`);
