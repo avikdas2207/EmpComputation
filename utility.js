@@ -1,22 +1,15 @@
-class Empwage {
-
-    RandomCheck = () => {
-
-        let Random = Math.floor(Math.random() * 10) % 2 + 1;
-
-        return Random;
+module.exports = { empWage }
+function empWage() {
+    let isFullTime = 1;
+    let empRatePerHrs = 20;
+    let randomValue = Math.floor(Math.random() * 10) % 2;
+    if (randomValue == isFullTime) {
+        empHrs = 8;
+        return empRatePerHrs * empHrs;
     }
-
-
-    AttCheck = () => {
-
-        if(this.RandomCheck() == 1 ){
-            console.log("Employee is Present");
-        }
-        else{
-            console.log("Employee is  Absent")
-        }
+    else {
+        empHrs = 0;
+        return empRatePerHrs * empHrs;
     }
 }
-
-module.exports = new Empwage();
+empWage();

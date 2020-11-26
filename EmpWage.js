@@ -1,5 +1,3 @@
-console.log("Welcome to employee wage Computation problem\n");
-
-let Utility = require('./utility');
-
-Utility.AttCheck();
+const Utility = require('./Utility');
+const wage = Utility.empWage();
+console.log(wage);
